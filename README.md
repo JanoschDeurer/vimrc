@@ -4,9 +4,11 @@ My latest vimrc it includes [vundle](https://github.com/gmarik/Vundle.vim) confi
 * Ultisnippets
 * Supertab
 
-This vimrc is in most cases not sutable for server environments as it integrates YouCompleteMe.
+*Note:* This vimrc is in most cases not sutable for server environments as it uses YouCompleteMe.
 
-.gitigrone assumes you clone this in ~/.vim and set a link with:
+## Setup
 ```bash
-ln -s ~/.vim/.vimrc ~/.vimrc
+cd ~/.vim
+git clone https://github.com/JanoschDeurer/vimrc
+ln -s ~/.vim/vimrc/.vimrc ~/vimrc
 ```
