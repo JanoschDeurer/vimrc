@@ -10,5 +10,5 @@ My latest vimrc it includes [vundle](https://github.com/gmarik/Vundle.vim) confi
 ```bash
 cd ~/.vim
 git clone https://github.com/JanoschDeurer/vimrc
-ln -s ~/.vim/vimrc/.vimrc ~/vimrc
+ln -s ~/.vim/vimrc/.vimrc ~/.vimrc
 ```
