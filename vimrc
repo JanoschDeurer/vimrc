@@ -59,3 +59,8 @@ let g:UltiSnipsListSnippets = "<f5>"
 " " insert mode
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+" associate *.md with markdown filetype
+au BufRead,BufNewFile *.md setfiletype markdown
+" associate *.tex with tex filetype
+au BufRead,BufNewFile *.tex setfiletype tex
