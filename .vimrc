@@ -64,3 +64,10 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 au BufRead,BufNewFile *.md setfiletype markdown
 " associate *.tex with tex filetype
 au BufRead,BufNewFile *.tex setfiletype tex
+
+set smartindent
+set incsearch
+set hlsearch
+set backupdir=/home/janosch/.vim/tmpFiles
+set directory=/home/janosch/.vim/tmpFiles
+
