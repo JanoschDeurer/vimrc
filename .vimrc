@@ -7,6 +7,8 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+" Keep Plugin commands between vundle#begin/end.
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
@@ -18,13 +20,10 @@ Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'Valloric/YouCompleteMe'
-" Next 2 for markdown
-" Plugin 'godlygeek/tabular'
-"Plugin 'plasticboy/vim-markdown'
+
+" This makes per directory configurations possible
+Plugin 'embear/vim-localvimrc'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
