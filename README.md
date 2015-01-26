@@ -11,4 +11,7 @@ My latest vimrc it includes [vundle](https://github.com/gmarik/Vundle.vim) confi
 cd ~/.vim
 git clone https://github.com/JanoschDeurer/vimrc
 ln -s ~/.vim/vimrc/.vimrc ~/.vimrc
+mkdir -p ~/.vim/tmpFiles
+vim +PluginInstall +qall
 ```
+
