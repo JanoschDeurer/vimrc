@@ -64,6 +64,9 @@ au BufRead,BufNewFile *.md setfiletype markdown
 " associate *.tex with tex filetype
 au BufRead,BufNewFile *.tex setfiletype tex
 
+"" Keep the horizontal cursor position when moving vertically.
+set nostartofline
+
 set smartindent
 set incsearch
 set hlsearch
