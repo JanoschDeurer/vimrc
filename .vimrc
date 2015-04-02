@@ -25,6 +25,9 @@ Plugin 'Valloric/YouCompleteMe'
 " This makes per directory configurations possible
 Plugin 'embear/vim-localvimrc'
 
+" File browsing 
+Plugin 'scrooloose/nerdtree'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -63,6 +66,9 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 au BufRead,BufNewFile *.md setfiletype markdown
 " associate *.tex with tex filetype
 au BufRead,BufNewFile *.tex setfiletype tex
+
+" Open Nerdtreen with F1
+map <F1> :NERDTreeToggle<CR>
 
 "" Keep the horizontal cursor position when moving vertically.
 set nostartofline
