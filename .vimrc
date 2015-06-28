@@ -51,8 +51,8 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 "
 " " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 let g:UltiSnipsListSnippets = "<f5>"
 "
 "
@@ -63,9 +63,9 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " associate *.md with markdown filetype
-au BufRead,BufNewFile *.md setfiletype markdown
+au BufRead,BufNewFile *.md set filetype=markdown
 " associate *.tex with tex filetype
-au BufRead,BufNewFile *.tex setfiletype tex
+au BufRead,BufNewFile *.tex set filetype=tex
 
 " Open Nerdtreen with F1
 map <F1> :NERDTreeToggle<CR>
