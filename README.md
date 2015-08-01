@@ -13,6 +13,8 @@ cd ~/.vim
 git clone https://github.com/JanoschDeurer/vimrc
 ln -s ~/.vim/vimrc/.vimrc ~/.vimrc
 mkdir -p ~/.vim/tmpFiles
+#Install Livedown to use Markdown preview
+npm install -g livedown
 vim +PluginInstall +qall
 ```
 If you haven't used [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) so far you have to set up this too. If so you will see a message after executing PluginInstall that tells you to install YouCompleteMe. Further instructions can be found in the [install section of YouCompleteMe](https://github.com/Valloric/YouCompleteMe#ubuntu-linux-x64-super-quick-installation).

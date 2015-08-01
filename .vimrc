@@ -31,11 +31,14 @@ Plugin 'scrooloose/nerdtree'
 " Multiple cursers
 Plugin 'terryma/vim-multiple-cursors'
 
+" Markdown live preview with Livedown
+Plugin 'shime/vim-livedown'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+" filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -72,6 +75,9 @@ au BufRead,BufNewFile *.tex set filetype=tex
 
 " Open Nerdtreen with F1
 map <F1> :NERDTreeToggle<CR>
+
+" should markdown preview get shown automatically upon opening markdown buffer
+let g:livedown_autorun = 1
 
 "" Keep the horizontal cursor position when moving vertically.
 set nostartofline
