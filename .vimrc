@@ -1,3 +1,5 @@
+" Enable 256 Colors
+set t_Co=256
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -20,6 +22,7 @@ Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 
+" Autocompletion
 Plugin 'Valloric/YouCompleteMe'
 
 " This makes per directory configurations possible
@@ -33,6 +36,12 @@ Plugin 'terryma/vim-multiple-cursors'
 
 " Markdown live preview with Livedown
 Plugin 'shime/vim-livedown'
+
+" Better status line with vim-airline
+Plugin 'bling/vim-airline'
+
+" Working witch git with fugitive
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -65,7 +74,7 @@ let g:UltiSnipsListSnippets = "<f5>"
 " If you prefer the Omni-Completion tip window to close when a selection is
 " " made, these lines close it on movement in insert mode or when leaving
 " " insert mode
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+" autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " associate *.md with markdown filetype
@@ -78,6 +87,15 @@ map <F1> :NERDTreeToggle<CR>
 
 " should markdown preview get shown automatically upon opening markdown buffer
 let g:livedown_autorun = 1
+
+" configure vim-airline
+"
+" appear all the time
+set laststatus=2
+" Use powerline fonts
+let g:airline_powerline_fonts = 1
+" Only show bufferline if needed
+set noshowmode
 
 "" Keep the horizontal cursor position when moving vertically.
 set nostartofline
