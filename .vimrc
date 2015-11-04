@@ -1,5 +1,5 @@
-" Enable 256 Colors
-set t_Co=256
+" Enable Vim to work with solarized colors
+set t_Co=16
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -42,6 +42,9 @@ Plugin 'bling/vim-airline'
 
 " Working witch git with fugitive
 Plugin 'tpope/vim-fugitive'
+
+" Syntax checking
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -96,13 +99,32 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 " Only show bufferline if needed
 set noshowmode
+" Show buffers if no tabs are open
+let g:airline#extensions#tabline#enabled = 1
+" Choose solarized theme
+let g:airline_theme='solarized'
 
 "" Keep the horizontal cursor position when moving vertically.
 set nostartofline
 
+" Configure Syntastics
+"let g:syntastic_python_python_exec = 'python3'
+"let g:syntastic_python_python_exe = 'python3'
+" Enable this to get cpplint
+" let g:ycm_register_as_syntastic_checker = 0
+" let g:syntastic_cpp_checkers = ['cpplint']
+
+
+
 set smartindent
 set incsearch
-set hlsearch
 set backupdir=/home/janosch/.vim/tmpFiles
 set directory=/home/janosch/.vim/tmpFiles
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
+" Configure tab behaviour
+set switchbuf=usetab
+nnoremap <F2> :tabNext<CR>
+nnoremap <F3> :tabprevious<CR>
