@@ -1,5 +1,9 @@
 " Enable Vim to work with solarized colors
 set t_Co=16
+hi clear SpellBad
+hi SpellBad cterm=underline
+
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
