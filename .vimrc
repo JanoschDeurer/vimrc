@@ -118,8 +118,8 @@ set nostartofline
 
 set smartindent
 set incsearch
-set backupdir=/home/janosch/.vim/tmpFiles
-set directory=/home/janosch/.vim/tmpFiles
+set backupdir=~/.vim/tmpFiles
+set directory=~/.vim/tmpFiles
 set expandtab
 set shiftwidth=2
 set softtabstop=2
