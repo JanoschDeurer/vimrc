@@ -28,7 +28,7 @@ Plugin 'Valloric/YouCompleteMe'
 " This makes per directory configurations possible
 Plugin 'embear/vim-localvimrc'
 
-" File browsing 
+" File browsing
 Plugin 'scrooloose/nerdtree'
 
 " Multiple cursers
@@ -118,8 +118,8 @@ set nostartofline
 
 set smartindent
 set incsearch
-set backupdir=/home/janosch/.vim/tmpFiles
-set directory=/home/janosch/.vim/tmpFiles
+set backupdir=~/.vim/tmpFiles
+set directory=~/.vim/tmpFiles
 set expandtab
 set shiftwidth=2
 set softtabstop=2
