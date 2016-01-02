@@ -114,11 +114,18 @@ let g:airline_theme='solarized'
 set nostartofline
 
 " Configure Syntastics
-"let g:syntastic_python_python_exec = 'python3'
-"let g:syntastic_python_python_exe = 'python3'
+"
+" Remove the following 2 lines to work with python2
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_pylint_exec = 'pylint3'
+
 " Enable this to get cpplint
 " let g:ycm_register_as_syntastic_checker = 0
 " let g:syntastic_cpp_checkers = ['cpplint']
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+" Configure tidy to work with angular html code
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming empty <", "unescaped &" , "lacks \"action", "is not recognized!", "discarding unexpected"]
 
 
 
