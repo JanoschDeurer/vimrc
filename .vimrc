@@ -137,10 +137,6 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-
-" powerline throws an error without this, cant find powerline.vim
-let $PYTHONPATH='/usr/lib/python3.5/site-packages'
-
 " Configure tab behaviour
 set switchbuf=usetab
 nnoremap <F2> :tabNext<CR>
