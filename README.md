@@ -27,8 +27,6 @@ cd ~/.vim
 git clone https://github.com/JanoschDeurer/vimrc
 ln -s ~/.vim/vimrc/.vimrc ~/.vimrc
 mkdir -p ~/.vim/tmpFiles
-#Install Livedown to use Markdown preview
-npm install -g livedown
 vim +PluginInstall +qall
 ```
 
