@@ -34,7 +34,7 @@ Plugin 'Valloric/YouCompleteMe'
 " This makes per directory configurations possible
 Plugin 'embear/vim-localvimrc'
 
-" File browsing 
+" File browsing
 Plugin 'scrooloose/nerdtree'
 
 " Multiple cursers
@@ -45,6 +45,9 @@ Plugin 'shime/vim-livedown'
 
 " Better status line with vim-airline
 Plugin 'bling/vim-airline'
+
+" Theme Repository for airline
+Plugin 'vim-airline/vim-airline-themes'
 
 " Working witch git with fugitive
 Plugin 'tpope/vim-fugitive'
