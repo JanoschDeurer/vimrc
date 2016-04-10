@@ -131,6 +131,8 @@ let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming empty <", "unescaped &" , "lacks \"action", "is not recognized!", "discarding unexpected"]
 
 
+" enforce Python2 vor ycm server
+let g:ycm_server_python_interpreter = '/usr/bin/python'
 
 set smartindent
 set incsearch
