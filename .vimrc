@@ -137,6 +137,10 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming em
 " enforce Python2 vor ycm server
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 
+
+" force latex instead of tex
+let g:tex_flavour = 'latex'
+
 set smartindent
 set incsearch
 set backupdir=~/.vim/tmpFiles
