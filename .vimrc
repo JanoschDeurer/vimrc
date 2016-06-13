@@ -55,6 +55,9 @@ Plugin 'tpope/vim-fugitive'
 " Syntax checking
 Plugin 'scrooloose/syntastic'
 
+" LaTeX
+Plugin 'lervag/vimtex'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -133,6 +136,12 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming em
 
 " enforce Python2 vor ycm server
 let g:ycm_server_python_interpreter = '/usr/bin/python'
+
+
+" force latex instead of tex
+let g:tex_flavour = 'latex'
+"latex output directory
+let g:vimtex_latexmk_build_dir = 'output'
 
 set smartindent
 set incsearch
