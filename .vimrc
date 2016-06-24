@@ -58,6 +58,9 @@ Plugin 'scrooloose/syntastic'
 " Colaborative working on text documents
 Plugin 'FredKSchott/CoVim'
 
+" LaTeX
+Plugin 'lervag/vimtex'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

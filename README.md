@@ -12,6 +12,7 @@ configurations for:
 * [vim-airline](https://github.com/bling/vim-airline)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [syntastic](https://github.com/scrooloose/syntastic)
+* [vimtex](https://github.com/lervag/vimtex)
 * [covim](https://github.com/FredKSchott/CoVim)
 * and others that have been installed to make the upper plugins work nicely together.
 
