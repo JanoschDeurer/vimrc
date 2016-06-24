@@ -142,7 +142,7 @@ let g:ycm_server_python_interpreter = '/usr/bin/python'
 
 " force latex instead of tex
 let g:tex_flavour = 'latex'
-" "latex output directory
+" latex output directory
 let g:vimtex_latexmk_build_dir = 'output'
 
 set smartindent
