@@ -55,9 +55,6 @@ Plugin 'tpope/vim-fugitive'
 " Syntax checking
 Plugin 'scrooloose/syntastic'
 
-" Colaborative working on text documents
-Plugin 'FredKSchott/CoVim'
-
 " LaTeX
 Plugin 'lervag/vimtex'
 
