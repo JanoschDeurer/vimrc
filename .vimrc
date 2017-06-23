@@ -152,5 +152,5 @@ set softtabstop=2
 
 " Configure tab behaviour
 set switchbuf=usetab
-nnoremap <F2> :tabNext<CR>
-nnoremap <F3> :tabprevious<CR>
+nnoremap <F2> :tabprevious<CR>
+nnoremap <F3> :tabnext<CR>
