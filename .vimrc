@@ -1,5 +1,6 @@
 " Enable Vim to work with solarized colors
 set t_Co=16
+syntax on
 hi clear SpellBad
 " Change this if you want to work with the
 " light solarized color sheme
